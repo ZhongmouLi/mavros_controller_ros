@@ -43,11 +43,11 @@ WORKDIR /catkin_ws
 # Initialize catkin workspace
 RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin init"
 
-# Copy local source code into the container workspace
-COPY src/mavros_controllers /catkin_ws/src/mavros_controllers
+# # Copy local source code into the container workspace
+# COPY src/mavros_controllers /catkin_ws/src/mavros_controllers
 
-# Build the catkin workspace
-RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin build"
+# # Build the catkin workspace
+# RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && catkin build"
 
 # Set entrypoint and default command
 COPY ros_entrypoint.sh /ros_entrypoint.sh
