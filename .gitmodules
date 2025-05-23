@@ -1,0 +1,4 @@
+[submodule "src/mavros_controllers"]
+	path = src/mavros_controllers
+	url = git@github.com:ZhongmouLi/mavros_controllers.git
+	branch = dev
